@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinha</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-red-900 h-screen flex justify-center items-center">
+    <div class="w-125 bg-white rounded p-4">
+        <div class="flex">
+            <h1 class="text-[48px] font-semibold">Em que número<span class="text-amber-500">Bia</span>está pensando?
+            </h1>
+            <img src="./assets/bia-feliz.png" alt="dia" id="bia">
+        </div>
+
+        <input type="text" onchange="receberPalpite(event.target)"
+            class="w-15 h-15 border-2 border-slate-300 focus:border-red-700 rounded m-auto my-4 text-center block text-lg">
+        <h6 class="font-bold text-center">Seus palpites</h6>
+        <h2 id="palpites" class="text-center text-lg text-amber-500 font-bold"></h2>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
